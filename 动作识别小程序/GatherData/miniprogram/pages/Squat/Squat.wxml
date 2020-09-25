@@ -1,0 +1,57 @@
+<!--miniprogram/pages/get/get.wxml-->
+<!--pages/acc/acc.wxml-->
+<view class="fix" style="box-shadow: 0 3px 2px 0 #f7f7f7;wxcs_style_box-shadow: 0 6rpx 5rpx 0 #f7f7f7;">
+  <view style="height: {{capsuleInfo.top}}px;"></view>
+  <view class="navBar" style="height: {{capsuleInfo.height}}px; width: {{capsuleInfo.left}}px">
+    <view style="width: {{capsuleInfo.left}}px; text-align: center; line-height: {{capsuleInfo.height}}px">
+      <view>深蹲</view>
+    </view> 
+  </view>
+</view>
+
+<view class="contain" style="margin-top: {{capsuleInfo.top+capsuleInfo.height}}px;">
+  <view class="sensor-item acc">
+    <view class="list">
+      <view class="vi">
+        <view>加速度X轴数据</view>
+        <view>加速度Y轴数据</view>
+        <view>加速度Z轴数据</view>
+        <view>陀螺仪X轴数据</view>
+        <view>陀螺仪Y轴数据</view>
+        <view>陀螺仪Z轴数据</view>
+      </view>
+      <view class="value">
+        <view wx:if="{{accelerometerX}}">{{accelerometerX}}</view>
+        <view wx:if="{{accelerometerY}}">{{accelerometerY}}</view>
+        <view wx:if="{{accelerometerZ}}">{{accelerometerZ}}</view>
+        <view wx:if="{{gyroscopeX}}">{{gyroscopeX}}</view>
+        <view wx:if="{{gyroscopeY}}">{{gyroscopeY}}</view>
+        <view wx:if="{{gyroscopeZ}}">{{gyroscopeZ}}</view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="btn" bindtap="stopAG" wx:if="{{isReading}}">读取中……</view>
+      <view class="btn" bindtap="startAG" wx:else>开始读取</view>
+      <view class="btn" bindtap="saveAcc">存储</view>
+    </view>
+    <view wx:if="{{isReading || displayValue == 10}}" style="margin-top: 20px;display: flex;justify-content: space-between;">
+      <progress percent="{{value}}" style="width:90%" />
+      <view wx:if="{{displayValue}}">{{displayValue}}s</view>
+    </view>
+  </view>
+</view>
+<view>
+	<text class="tips">Tips：</text>
+</view>
+<view>
+	<text class="tips">1.请用右手持手机，蹲起时双手伸直与地面平行</text>
+</view>
+<view>
+  <text class="tips">2.读取完后直接点击存储即可</text>
+</view>
+<view>
+  <text class="tips">3.点击开始后持续做深蹲35秒，不要间断哦！</text>
+</view>
+
+
+

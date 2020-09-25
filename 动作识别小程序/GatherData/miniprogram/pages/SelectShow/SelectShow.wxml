@@ -1,0 +1,8 @@
+<!--miniprogram/pages/SelectShow/SelectShow.wxml-->
+<view class="img1">
+<text>测试过程中请右手持手机！</text>
+</view>
+<button bindtap="a1" class='btn1'>开合跳</button>
+<button bindtap="a2" class='btn'>深蹲</button>
+<button bindtap="a3" class='btn'>高抬腿跑</button>
+<button bindtap="a4" class='btn'>正常行走</button>

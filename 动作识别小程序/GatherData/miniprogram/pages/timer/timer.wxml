@@ -1,0 +1,3 @@
+<!--miniprogram/pages/timer/timer.wxml-->
+<text>miniprogram/pages/timer/timer.wxml</text>
+<view>你的GPA：{{heyhey}}</view>

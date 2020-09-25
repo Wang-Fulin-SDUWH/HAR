@@ -1,0 +1,32 @@
+/* miniprogram/pages/Userinfo/Userinfo.wxss */
+.btn{
+  background-color:rgb(238, 70, 9);
+  color: white;
+  border-radius: 80rpx;
+  margin-bottom:50px;
+}
+.inputA{
+  margin-top:5px;
+  border: 2px solid grey;
+  margin-left: 10px;
+  margin-right:10px;
+  background-color: white; 
+  padding-top:5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+#header1{
+  text-align:center;
+  background-color: white;
+  color:rgb(238, 70, 9);
+  border: 3px solid;
+  font-weight: 800;
+  font-size: 15px;
+  margin-top:20px;
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom:30px;
+  padding-top:8px;
+  padding-bottom:8px;
+  border-radius:10px;
+}

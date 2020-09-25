@@ -1,0 +1,42 @@
+<!--pages/acc/acc.wxml-->
+<view class="fix" style="box-shadow: 0 3px 2px 0 #f7f7f7;wxcs_style_box-shadow: 0 6rpx 5rpx 0 #f7f7f7;">
+  <view style="height: {{capsuleInfo.top}}px;"></view>
+  <view class="navBar" style="height: {{capsuleInfo.height}}px; width: {{capsuleInfo.left}}px">
+    <view style="width: {{capsuleInfo.left}}px; text-align: center; line-height: {{capsuleInfo.height}}px">
+      <view>手机内置传感器</view>
+    </view> 
+  </view>
+</view>
+
+<view class="contain" style="margin-top: {{capsuleInfo.top+capsuleInfo.height}}px;">
+  <view class="sensor-item acc">
+    <view class="list">
+      <view>
+        <view>X轴加速度</view>
+        <view>Y轴加速度</view>
+        <view>Z轴加速度</view>
+      </view>
+      <view class="value">
+        <view wx:if="{{accelerometerX}}">{{accelerometerX}}</view>
+        <view wx:if="{{accelerometerY}}">{{accelerometerY}}</view>
+        <view wx:if="{{accelerometerZ}}">{{accelerometerZ}}</view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="btn" bindtap="stopAccelerometer" wx:if="{{isReading}}">暂停读取</view>
+      <view class="btn" bindtap="startAccelerometer" wx:else>开始识别</view>
+      <view class="btn" bindtap="saveAcc">存储本次数据</view>
+    </view>
+    <view wx:if="{{isReading || displayValue == 10}}" style="margin-top: 20px;display: flex;justify-content: space-between;">
+      <progress percent="{{value}}" style="width:90%" />
+      <view wx:if="{{displayValue}}">{{displayValue}}s</view>
+    </view>
+  </view>
+  <view class="bord">
+    <text>在过去60秒中：</text>
+    <view>动作1（行走）次数：{{a_times1}}</view>
+    <view>动作2（开合跳）次数：{{a_times2}}</view>
+    <view>动作3（高抬腿跑）次数：{{a_times3}}</view>
+    <view>动作4（深蹲）次数：{{a_times4}}</view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<text id="header1">感谢您为我们提供运动数据！</text>
+<button style="margin-top:40px;margin-bottom:20px;background-color:#00ddaa" bindtap="get1">开合跳</button>
+<button style="margin-top:10px;margin-bottom:20px;background-color:#00ddaa" bindtap="get2">原地高抬腿</button>
+<button style="margin-top:10px;margin-bottom:20px;background-color:#00ddaa" bindtap="get3">深蹲</button>
+<button style="margin-top:10px;margin-bottom:20px;background-color:#00ddaa" bindtap="get4">前后交叉跳</button>

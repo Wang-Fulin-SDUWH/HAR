@@ -1,0 +1,5 @@
+<!--miniprogram/pages/Show/Show.wxml-->
+<view style="font-size:20px;align-items:center;display:flex;justify-content:center;" class='title'>开合跳</view>
+<view class="img">
+<image bindload="gifImgLoad" wx:if="{{gifUrl}}" src="{{gifUrl}}"></image>
+</view>

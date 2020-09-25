@@ -1,0 +1,5 @@
+<!--miniprogram/pages/Show/Show.wxml-->
+<view style="font-size:20px;align-items:center;display:flex;justify-content:center;" class='title'>行走</view>
+<view class="img">
+<text>测试行走动作时，手臂要有自然摆动哦！</text>
+</view>

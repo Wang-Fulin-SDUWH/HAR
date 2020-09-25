@@ -1,0 +1,8 @@
+<!--miniprogram/pages/Show/Show.wxml-->
+<view style="font-size:20px;align-items:center;display:flex;justify-content:center;" class='title'>高抬腿跑</view>
+<view class="img">
+<image bindload="gifImgLoad" wx:if="{{gifUrl}}" src="{{gifUrl}}"></image>
+</view>
+<view class="img1">
+<text>测试高抬腿跑时，保持两手掌相对，手掌不要翻转，手臂要向前向上有一定摆动幅度，后摆不要太大哦！</text>
+</view>

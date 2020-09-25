@@ -1,0 +1,26 @@
+/* miniprogram/pages/SelectShow/SelectShow.wxss */
+.btn{
+  background-color:rgb(238, 70, 9);
+  color: white;
+  border-radius: 80rpx;
+  margin-bottom:50px;
+}
+.btn1{
+  background-color:rgb(238, 70, 9);
+  color: white;
+  border-radius: 80rpx;
+  margin-bottom:50px;
+  margin-top:50px;
+}
+.img1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px red;
+  border-radius: 50rpx;
+  margin-left:5%;
+  margin-right: 5%;
+  margin-top:15px;
+  padding-left:10%;
+  padding-right:10%;
+}

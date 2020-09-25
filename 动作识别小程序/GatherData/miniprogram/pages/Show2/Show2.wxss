@@ -1,0 +1,11 @@
+/* miniprogram/pages/Show/Show.wxss */
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  margin-top:10px;
+  margin-bottom:5px;
+}

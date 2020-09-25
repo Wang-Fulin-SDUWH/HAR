@@ -1,0 +1,15 @@
+<!--miniprogram/pages/Userinfo/Userinfo.wxml-->
+<view id="header1">我们郑重承诺不会泄露您的信息</view>
+<input class='inputA' placeholder='请输入您的年龄(输入数字即可)' bindinput="inputAge"></input>
+<text>\n</text>
+<input class='inputA' placeholder="请输入您的性别(男/女)" bindinput="inputSex" />
+<text>\n</text>
+<input class='inputA' placeholder="请输入您的身高(cm)" bindinput="inputH" />
+<text>\n</text>
+<input class='inputA' placeholder="请输入您的体重(kg)" bindinput="inputW" />
+<text>\n</text>
+<button bindtap="submit" class='btn'>数据采集</button>
+<button bindtap="show" class='btn'>动作演示</button>
+<!--<button bindtap="test" class='btn'>测试JS</button>-->
+<button bindtap="second2" class='btn'>动作识别与计数</button>
+<!--<button bindtap="timer" class='btn'>测试</button>-->
