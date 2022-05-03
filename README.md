@@ -1,7 +1,7 @@
 # 试验设计与统计基础
 A project to recognize different kinds of HIIT activities on Wechat miniprogram
 
-电脑端部署的代码在"Python代码"文件夹下ipynb文件中；小程序端部署的文件是一些js文件。
+电脑端部署的代码在"Python代码"文件夹下ipynb文件中；小程序端部署的文件在“动作识别小程序“下，主要逻辑代码在Pages文件夹中。
 
 
 关于小程序
